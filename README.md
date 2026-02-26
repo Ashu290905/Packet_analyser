@@ -46,13 +46,13 @@ PCAP Reader → Packet Parser → TLS SNI Extractor → Output Writer
 
 Modules
 
-File	Responsibility
-dpi_mt.cpp	Thread orchestration and task scheduling
-pcap_reader.cpp	PCAP ingestion and streaming
-packet_parser.cpp	Ethernet/IP/TCP decoding
-sni_extractor.cpp	TLS ClientHello parsing and SNI extraction
-types.cpp	Shared protocol structures
-
+| File               | Responsibility                               |
+|--------------------|----------------------------------------------|
+| `dpi_mt.cpp`       | Thread orchestration and task scheduling     |
+| `pcap_reader.cpp`  | PCAP ingestion and streaming                 |
+| `packet_parser.cpp`| Ethernet/IP/TCP decoding                     |
+| `sni_extractor.cpp`| TLS ClientHello parsing and SNI extraction   |
+| `types.cpp`        | Shared protocol structures                   |
 Each component is isolated to maintain clean boundaries between concurrency control and protocol parsing.
 ```
 
