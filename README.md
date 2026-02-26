@@ -94,10 +94,4 @@ dpi_engine.exe input.pcap output.pcap
 ```
 ---
 
-### What This Project Demonstrates
-	•	Systems-level protocol reasoning
-	•	Thread coordination and workload partitioning
-	•	Performance-aware C++ design
-	•	Clean modular architecture in low-level systems code
-	•	Practical understanding of traffic inspection mechanics
 
